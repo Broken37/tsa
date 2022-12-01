@@ -1,0 +1,318 @@
+html {
+  --bs-white: rgb(255, 255, 255);
+  --bs-nav-shadow: rgba(33, 37, 41, 0.1);
+  --bs-bgcolor: rgb(245, 247, 251);
+  --bs-ddcolor: rgb(194, 215, 228);
+  --bg-ddcontent: rgba(78, 79, 79, 0.796);
+  --bs-btn-color: rgb(41, 100, 172);
+  --bs-btn-hcolor: rgb(87, 141, 206);
+  --bs-danger:rgb(248, 53, 28);
+  --bs-btn-gcolor: rgb(38, 169, 71);
+  --bs-btn-hgcolor: rgb(87, 206, 117);
+  --bs-btn-rcolor: rgb(204, 20, 47);
+  --bs-btn-hrcolor: rgb(238, 91, 113);
+  --bs-btn-ibcolor: rgb(175, 213, 251);
+  --bs-btn-icolor: rgb(40, 97, 212);
+}
+
+* {
+  direction: ltr;
+  box-sizing: border-box;
+  font-family: CustomFont, Poppins, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bs-white);
+}
+
+div {
+  display: block;
+}
+
+.main {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0px;
+  width: 100%;
+  background: var(--bs-bgcolor);
+  overflow: hidden;
+  transition: margin-left 0.35s ease-in-out 0s, left 0.35s ease-in-out 0s, margin-right 0.35s ease-in-out 0s, right 0.35s ease-in-out 0s;
+}
+
+.content {
+  direction: ltr;
+  max-width: 100%;
+  width: 100%;
+  flex: 1 1 0%;
+  padding: 1.5rem;
+}
+
+.content .navbar {
+  background-color: var(--bs-white);
+  box-shadow: var(--bs-nav-shadow) 0px 0px 2rem 0px;
+  border-bottom: 0px;
+}
+
+.box {
+  --bs-card-spacer-y: 1.25rem;
+  --bs-card-spacer-x: 1.25rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 0;
+  --bs-card-border-color: transparent;
+  --bs-card-border-radius: 0.25rem;
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: 0.25rem;
+  --bs-card-cap-padding-y: 1rem;
+  --bs-card-cap-padding-x: 1.25rem;
+  --bs-card-cap-bg: #fff;
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 12px;
+  overflow-wrap: break-word;
+  background-clip: border-box;
+  background-color: var(--bs-white);
+  display: flex;
+  flex-direction: column;
+  height: var(--bs-card-height);
+  min-width: 0px;
+  position: relative;
+  box-shadow: var(--bs-nav-shadow) 0px 0px 0.875rem 0px;
+  margin-bottom: 24px;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+}
+
+.drag-area {
+  border: 2px dashed #fff;
+  height: 20rem;
+  width: 70%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bs-ddcolor);
+  margin: auto;
+  position: relative;
+}
+
+.drag-area.active {
+  border: 2px solid #fff;
+}
+
+.drag-area .icon {
+  font-size: 100px;
+  color: var(--bg-ddcontent);
+}
+
+.drag-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--bg-ddcontent);
+}
+
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--bg-ddcontent);
+  margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: var(--bs-btn-color);
+  color: var(--bs-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area button:hover {
+  background: var(--bs-btn-hcolor);
+  color: var(--bs-white);
+  border-radius: 5px;
+}
+
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.footer{
+  padding: 1rem;
+}
+
+.green-button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: var(--bs-btn-gcolor);
+  color: var(--bs-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.green-button:hover {
+  background: var(--bs-btn-hgcolor);
+}
+
+.red-button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: var(--bs-btn-rcolor);
+  color: var(--bs-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  background: var(--bs-btn-hrcolor);
+}
+
+.order-add-wrapper.up {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20 !important;
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.5s ease;
+}
+
+.order-add-wrapper {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.box-add-model {
+  padding: 0.5rem;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  transform: translate(50%, 10%);
+  border-radius: 0.1rem;
+}
+
+.box-add-header {
+  padding: 1rem 1.5rem 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.05rem solid var(--upcolorBG);
+}
+
+.box-add-header .ml {
+  fill: var(--bs-danger);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+
+.box-add-header i svg:hover {
+  background-color: var(--bs-danger);
+  fill: rgb(255, 255, 255);
+  border-radius: 30%;
+  padding-bottom: 2px;
+  padding-right: 2px;
+}
+
+.box-add-footer{
+  padding: 1rem;
+}
+
+
+.container{
+  background-color: var(--bs-bgcolor);
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.items {
+  width: 35%;
+}
+
+.item{
+  margin:2.5%;
+  width: 95%;
+  height: 55px;
+  background-color: var(--bs-white);
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.item i {
+  margin: auto 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bs-btn-ibcolor);
+  fill: none;
+  color: var(--bs-btn-icolor);
+}
+
+.item i svg{
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+
+.item span{
+  margin: auto 0;
+}
+
+.chart {
+  padding: 0.5rem;
+  width: 65%;
+  background-color: var(--bs-bgcolor);
+}
+
+.chart-content{
+  background-color: var(--bs-white);
+  height: 250px;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+
+
+

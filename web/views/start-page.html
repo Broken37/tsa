@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+    <title>start page</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="navbar">
+
+            </div>
+
+            <div class="box">
+                <div class="drag-area">
+                    <div class="icon">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="16 16 12 12 8 16"></polyline>
+                                <line x1="12" y1="12" x2="12" y2="21"></line>
+                                <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+                                <polyline points="16 16 12 12 8 16"></polyline>
+                            </svg>
+                        </i>
+                    </div>
+                    <header>Drag & Drop to Upload File</header>
+                    <span>OR</span>
+                    <button>Browse File</button>
+                    <input type="file" hidden>
+                </div>
+                <div class="footer">
+                    <button type="submit" class="green-button" id="show-chart">Show chart</button>
+                </div>
+            </div>
+
+            <div class="order-add-wrapper">
+                <div class="box-add-model">
+                    <div class="box-add-header">
+                        <i>
+
+                            <h2 class="">CSV chart</h2>
+                        </i>
+                        <i id="order-add-close-cross" class="ml">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+
+                                <path style="transform:scale(0.8);"
+                                    d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z">
+                                </path>
+                            </svg>
+                        </i>
+
+                    </div>
+                    <div class="container clearfix">
+                        <div class="items">
+                            <div class="item">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-math-max"
+                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <circle cx="12" cy="5" r="2" />
+                                        <path d="M3 20c0 -8.75 4 -14 7 -14.5m4 0c3 .5 7 5.75 7 14.5" />
+                                    </svg>
+                                    
+                                </i>
+                                <span>Maximum is :</span>
+
+                            </div>
+                            <div class="item">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-math-avg" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <path d="M3 21l18 -18" />
+                                        <circle cx="12" cy="12" r="8" />
+                                    </svg>
+                                </i>
+                                <span> Average is :</span>
+                            </div>
+                            <div class="item">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-math-min" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <circle transform="matrix(1 0 0 -1 0 38)" cx="12" cy="19" r="2" />
+                                        <path d="M3 4c0 8.75 4 14 7 14.5m4 0c3 -.5 7 -5.75 7 -14.5" />
+                                    </svg>
+                                </i> 
+                                <span>Minimum is :</span>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <div class="chart-content"></div>
+                        </div>
+                    </div>
+                    <div class="box-add-footer">
+                        <button type="submit" class="green-button">button</button>
+                        <button type="button" id="order-add-close-btn" class="red-button">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
